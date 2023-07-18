@@ -1,4 +1,4 @@
-console.log('Olá, mundo!');
+const http = require('http');
 
 http.createServer((requisicao, resposta) => {
     resposta.writeHead(200, {

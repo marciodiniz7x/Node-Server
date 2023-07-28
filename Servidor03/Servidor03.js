@@ -8,7 +8,9 @@ const servidor = http.createServer((require, response) => {
         response.write('<h1> Seja bem vindo</>');
     } else if (require.url == "/canal") {
         response.write('<h1>CBF Cursos</h1>');
-    } if (require.url == '/curso') {
+    } else if (require.url == '/curso') {
+        response.write('<h1>Curso Disponiveis</h1>');
+    } else if (require.url == '/curso/node') {
         response.write('<h1>Curso de Node</h1>');
     }
     response.end();
